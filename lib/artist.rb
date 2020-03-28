@@ -1,7 +1,7 @@
 class Artist
 
   attr_accessor :name, :songs
-  
+
   @@all = []
 
   def initialize(name)
@@ -14,7 +14,7 @@ class Artist
     @songs << song
   end
 
-  
+
 
   def self.find_or_create_by_name(artist_name)
     found_artist = self.all.find {|artist| artist.name == artist_name}
