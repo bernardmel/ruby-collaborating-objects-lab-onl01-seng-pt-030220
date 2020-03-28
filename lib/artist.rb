@@ -10,8 +10,8 @@ class Artist
 
   end
 
-  def self.all(artist)
-    artist = @@all
+  def self.all
+     @@all
   end
 
 
