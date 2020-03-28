@@ -14,6 +14,9 @@ class Artist
     @songs << song
   end
 
+  def save
+    @@all << self
+  end
 
 
   def self.find_or_create_by_name(artist_name)
